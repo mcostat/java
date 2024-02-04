@@ -1,4 +1,4 @@
-package com.example.udemy.demo.entities;
+package com.example.udemy.demo.entities.enums;
 
 public enum OrderStatus {
     WAITING_PAYMENT(1),

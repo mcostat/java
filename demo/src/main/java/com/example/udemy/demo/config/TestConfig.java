@@ -10,9 +10,9 @@ import org.springframework.context.annotation.Profile;
 
 import com.example.udemy.demo.entities.Category;
 import com.example.udemy.demo.entities.Order;
-import com.example.udemy.demo.entities.OrderStatus;
 import com.example.udemy.demo.entities.Product;
 import com.example.udemy.demo.entities.User;
+import com.example.udemy.demo.entities.enums.OrderStatus;
 import com.example.udemy.demo.repositories.CategoryRepository;
 import com.example.udemy.demo.repositories.OrderRepository;
 import com.example.udemy.demo.repositories.ProductRepository;
