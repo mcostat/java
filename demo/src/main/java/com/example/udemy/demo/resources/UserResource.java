@@ -16,6 +16,8 @@ import com.example.udemy.demo.entities.User;
 import com.example.udemy.demo.services.UserService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.PutMapping;
+
 
 
 @RestController
@@ -52,5 +54,12 @@ public class UserResource {
 
         return ResponseEntity.noContent().build();
     }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<User> updateUser(@PathVariable Long id, @RequestBody User entity) {
+       entity = service.update(id, entity);
+        
+        return ResponseEntity.ok().body(entity);
+    } 
     
 }
